@@ -26,7 +26,8 @@
   <label>Total Sets
     <input type="number" id="totalSets" value="4">
   </label>
-
+  <div><button id="closeBtn" class="close-btn">✕</button></div>
+  
   <div id="circle" class="circle set">
     <div id="time">5</div>
     <div id="mode">Sec</div>
@@ -37,8 +38,19 @@
   </div>
   <div class="buttons">
   <button id="startStop">Start</button>
-  <button id="reset">Reset</button>
+  <button id="resetBtn">Reset</button>
   </div>
+  
+ 
+
+<audio id="beepSet">
+  <source src="beep-set.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="beepRest">
+  <source src="beep-rest.mp3" type="audio/mpeg">
+</audio>
+
 </div>
 <script src="app.js"></script>
 </body>
